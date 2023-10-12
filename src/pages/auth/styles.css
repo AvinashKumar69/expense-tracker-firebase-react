@@ -12,13 +12,13 @@
 }
 /* #219ebc */
 
-.login-page p {
+/* .login-page p {
   font-size: 50px;
   font-weight: bold;
-}
+} */
 
 /* GOOGLE BUTTOn */
-.login-with-google-btn {
+/* .login-with-google-btn {
   cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s;
   padding: 5px 16px 12px 42px;
@@ -50,4 +50,4 @@
   background-color: #ebebeb;
   box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
   cursor: not-allowed;
-}
+} */

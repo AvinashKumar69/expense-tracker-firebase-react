@@ -34,7 +34,7 @@ export const Auth = () => {
       textAlign={"center"}
       className="login-page"
     >
-      <Text fontFamily={"cursive"} mb={5}>
+      <Text fontSize={["3xl", "5xl", "7xl"]} fontFamily={"cursive"} mb={5}>
         Sign In With Google to Continue
       </Text>
       <Button
@@ -42,6 +42,7 @@ export const Auth = () => {
         bg={"#fff"}
         color={"#000"}
         variant="solid"
+        fontSize={"lg"}
         onClick={signInWithGoogle}
       >
         Sign In With Google
