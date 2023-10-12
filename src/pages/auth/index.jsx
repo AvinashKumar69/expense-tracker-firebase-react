@@ -1,6 +1,8 @@
-import { auth, provider } from "../../config/firebase-config";
+import { Button, Stack, Text } from "@chakra-ui/react";
 import { signInWithPopup } from "firebase/auth";
-import { useNavigate, Navigate } from "react-router-dom";
+import { FcGoogle } from "react-icons/fc";
+import { Navigate, useNavigate } from "react-router-dom";
+import { auth, provider } from "../../config/firebase-config";
 import { useGetUserInfo } from "../../hooks/useGetUserInfo";
 import "./styles.css";
 
@@ -25,12 +27,25 @@ export const Auth = () => {
   }
 
   return (
-    <div className="login-page">
-      <p>Sign In With Google to Continue</p>
-      <button className="login-with-google-btn" onClick={signInWithGoogle}>
-        {" "}
+    <Stack
+      direction={["column"]}
+      alignItems={"center"}
+      justifyContent={"center"}
+      textAlign={"center"}
+      className="login-page"
+    >
+      <Text fontFamily={"cursive"} mb={5}>
+        Sign In With Google to Continue
+      </Text>
+      <Button
+        leftIcon={<FcGoogle size={20} />}
+        bg={"#fff"}
+        color={"#000"}
+        variant="solid"
+        onClick={signInWithGoogle}
+      >
         Sign In With Google
-      </button>
-    </div>
+      </Button>
+    </Stack>
   );
 };
